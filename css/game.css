@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*
+ * Screen
+ * */
+.picture{
+	overflow:hidden;
+}
+#game{
+	overflow:hidden;
+	background-color:#333;
+	height:300px;
+	width:500px;
+	position: relative;
+}
+#road{
+	background-color:#333;
+	background-image:url("../img/road.jpg");
+	width:500px;
+	height:600px;			
+	margin-top:-300px;
+}
+
+
+/*
+ * Car
+ * */
+@keyframes car {
+	from {margin-left: 0px;}
+	to {margin-left: -512px;}
+}
+#car > .picture{
+	animation: car 1.0s steps(8, end) infinite;
+	height:64px;
+	background-image:url("../img/rocket.png");
+	margin-left:0px;
+}
+#car{
+	width:64px;
+	height:64px;
+	margin-top:-100px;
+	margin-left: 80px;
+	position: absolute;
+	overflow: hidden;
+}
+
+/*
+ * Bulbassauro
+ * */
+
+@keyframes pkm {
+	from {margin-left: 0px;}
+	to {margin-left: -252px;}
+}
+#bulbassauro > .picture{
+	animation: pkm 0.5s steps(4, end) infinite;
+	height:70px;
+	background-image:url("../img/bulbassauro.png");
+	background-position: 0 -192px;
+	margin-left:0px;
+}
+#bulbassauro{
+	width:64px;
+	height:70px;
+	margin-top:70px;
+	margin-left: 80px;
+	position: absolute;
+	overflow: hidden;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game Blockly</title>
+	<script src="js/blockly_compressed.js"></script>
+	<script src="js/blocks_compressed.js"></script>
+	<script src="js/javascript_compressed.js"></script>
+	<script src="js/msg/js/en.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/new-game.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/new-game.css">
+</head>
+<body>
+	<header>
+		<h1>Blocky Game - Por Felipe Almeida</h1>
+	</header>
+	<section class="game-area">
+		<div class="game-area-layer">
+			<div id="game-player">
+				<div class="grid-item grid-item-player" data-px="0" data-py="6" id="player"></div>
+			</div>
+		</div>
+		<div class="game-area-layer">
+			<div id="game-cenario">
+			</div>
+		</div>
+	</section>
+	<section class="blockly-setup">
+		<input id="play" value="Execute o código" type="button"/>
+		<div id="blocklyDiv" style="height: 480px; width: 100%"></div>
+		<xml id="toolbox" style="display:none">
+			<block type="controls_if"></block>
+			<block type="logic_compare"></block>
+			<block type="logic_boolean"></block>
+			<block type="controls_repeat_ext"></block>
+			<block type="math_number"></block>
+			<block type="math_arithmetic"></block>
+
+			<block type="playerMoveLeft"></block>
+			<block type="playerMoveRight"></block>
+			<block type="playerJumpLeft"></block>
+			<block type="playerJumpRight"></block>
+			<block type="current_x"></block>
+			<block type="current_y"></block>
+			<!--
+			<block type="string_notice"></block>
+			<block type="right"></block>
+			<block type="text"></block>
+			<block type="text"></block>
+			<block type="text_print"></block>
+			<block type="string_length"></block>
+			-->
+		</xml>
+	</section>
+</body>
+</html>

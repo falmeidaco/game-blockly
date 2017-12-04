@@ -1,0 +1,51 @@
+
+.game-area {
+	width: 400px;
+	height: 160px;
+	background-color: lightgray;
+	position: relative;
+}
+.game-area-layer {
+	position: absolute;
+	width: 400px;
+	height: 160px;
+	left:0;
+	top: 0;
+}
+#game-cenario, #game-player  {
+	position: relative;
+	width: 400px;
+	height: 160px;
+}
+.grid-item {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.grid-item span {
+	font-size: 0.8em;
+	text-align: center;
+	display: none;
+}
+.grid-item:hover span {
+	display: block;
+}
+.grid-item-player {
+	background-color: blue;
+}
+.grid-item-ground {
+	background-color: orange;
+}
+.grid-item-block {
+	background-color: black
+}
+.grid-item-finish {
+	background-color: yellow;
+}
+.grid-item-sky {
+	background-color: transparent;
+}
+.grid-item-enemy {
+	background-color: red;
+}

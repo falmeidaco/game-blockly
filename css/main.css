@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+	background-color: #A8BAE8;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#banner{
+	border-bottom: 2px solid;
+	padding: 10px;
+}
+.col{
+	padding:20px;
+	background-color: #A6DCE8;
+}
